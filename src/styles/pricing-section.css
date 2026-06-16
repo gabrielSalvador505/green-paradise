@@ -1,0 +1,58 @@
+#pricing {
+    background-color: var(--light-gray);
+}
+.pricing-card {
+    position: relative;
+    background-color: var(--bg-color);
+    border-radius: 24px;
+    color: var(--second-text-color);
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+    height: 500px;
+    border: 1px solid #DCE1FF;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+    .plan {
+        color: var(--second-text-color);
+    }
+}
+
+.plan h4 {
+    font-size: var(--fs-lg);
+}
+
+.price {
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bold);
+}
+
+.feature {
+    display: flex;
+    gap: 0.5rem;
+    padding-block: 0.5rem;
+}
+
+.button-wrapper {
+    margin-top: auto;
+    align-self: center;
+}
+
+.highlight {
+    border: 3px solid var(--secondary-color)
+}
+
+.highlight .tag {
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    padding: 0.2rem;
+    padding-inline: 1rem;
+    color: var(--text-color);
+    position: absolute;
+    top: -15px;
+    align-self: center;
+}
+.highlight .price {
+    font-size: var(--fs-2xl);
+    color: var(--secondary-color);
+}

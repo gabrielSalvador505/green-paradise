@@ -1,0 +1,31 @@
+#footer {
+    border-top: 1px solid #DCE1FF;
+}
+
+.footer-container {
+    color: var(--second-text-color);
+    justify-content: space-around;
+    font-size: var(--fs-sm);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-nav {
+    font-weight: var(--fw-sb);
+}
+
+.footer-nav li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (width >= 1280px) {
+    .footer-container {
+        flex-direction: row;
+    }
+
+    .copyright {
+        width: 13rem;
+    }
+}
