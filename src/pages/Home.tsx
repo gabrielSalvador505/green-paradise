@@ -12,6 +12,9 @@ import PricingSection from "../components/PricingSection.tsx"
 import ContactSection from "../components/ContactSection.tsx"
 import FooterSection from "../components/FooterSection.tsx"
 
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 export default function Home() {
 
     const[showMobileMenu, setShowMobileMenu] = useState(false)
@@ -101,6 +104,9 @@ export default function Home() {
         <PricingSection/>
         <ContactSection/>
         <FooterSection/>
+
+        <ToastContainer position="top-right" autoClose={3000} />
+        
         </>
     )
 }

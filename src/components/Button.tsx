@@ -9,7 +9,7 @@ interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>{
     showIcon?: boolean
 }
 
-export default function Button ({ text, varianty = 'primary', showIcon = false}: IButtonProps) {
+export default function Button ({ text, varianty = 'primary', showIcon = false, onClick}: IButtonProps) {
 
     const variantStyles: Record<ButtonVariant, string> = {
         "primary": 'btn-primary',
@@ -20,7 +20,7 @@ export default function Button ({ text, varianty = 'primary', showIcon = false}:
     }
 
     return (
-        <button className={variantStyles[varianty]}>
+        <button className={variantStyles[varianty]} onClick={onClick}>
             {text}
             {showIcon && <img src={Arrow} height={15} width={15}/>}
         </button>
